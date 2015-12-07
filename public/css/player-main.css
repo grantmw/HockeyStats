@@ -1,0 +1,44 @@
+body, html {
+    background: #ff3b4e;
+    margin: 0;
+    padding: 0;
+}
+
+#ovechkinimage img {
+	border-radius: 0px 80px 0px;
+	border-color:#FFFFFF;
+    border:8px solid #FFFFFF;
+}
+
+#ovechkinimage {
+	text-align: center;
+
+}
+
+#backstromimage img {
+	border-radius: 0px 80px 0px;
+	border-color:#FFFFFF;
+    border:8px solid #FFFFFF;
+}
+
+.chosenone {
+	box-shadow: 10px 5px 0px black;
+}
+
+.chosenonehover {
+	box-shadow: 10px 5px 5px #CFCFC4;
+}
+
+* {
+	font-family: 'Roboto';
+	color: #FFFFFF;
+	font-size: 30px;
+}
+
+div ul {
+	text-align: center;
+}
+
+.playername {
+	font-size: 43px
+}
