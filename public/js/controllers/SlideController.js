@@ -10,11 +10,12 @@ app.controller('SlideController', ['$scope', function($scope) {
   };
 
   $(document).ready(function() {
-    console.log(this);
-    // $('.images').on('click', 'img', function(){
-    //   console.log('listener working')
-    //   $('div.playername').animate({'top': '-14px'}, 'slow')
-    // });
+    var showEverything = function(){
+      $('.loading').css('display','none')
+      $('.player-info').css('display','block')
+    }
+
+    setTimeout(showEverything, 7000)
     $('.images').on('mouseenter', 'img', function(){
       $(this).toggleClass('chosenonehover')
     });

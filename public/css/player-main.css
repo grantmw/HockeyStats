@@ -15,6 +15,10 @@ body, html {
 
 }
 
+.player-info{
+	display: none;
+}
+
 #backstromimage img {
 	border-radius: 0px 80px 0px;
 	border-color:#FFFFFF;
