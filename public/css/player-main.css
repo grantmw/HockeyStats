@@ -15,6 +15,10 @@ body, html {
 
 }
 
+.intro {
+	text-align: center;
+}
+
 .player-info{
 	display: none;
 }

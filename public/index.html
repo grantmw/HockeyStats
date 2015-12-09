@@ -3,6 +3,7 @@
 	<head>
 		<meta charset="UTF-8">
 		<link rel="stylesheet" type="text/css" href="/css/player-main.css">
+		<link rel="stylesheet" type="text/css" href="/css/animations.css">
 		<link rel="stylesheet" type="text/css" href="/css/custom-grid.css">
 		<link rel="stylesheet" src="//normalize-css.googlecode.com/svn/trunk/normalize.css" />
 		<link href='https://fonts.googleapis.com/css?family=Roboto:500' rel='stylesheet' type='text/css'>
@@ -13,8 +14,25 @@
 	</head>
 	<body ng-controller="MainController as main">
 		<div ng-controller="SlideController as slide">
+			<div class="row loading">
+				<div class='col-6 intro'>
+					<br><br><br>
+					Track the stats of: <br><br> 
+					Nicklas Backstrom &<br>
+					Alexander Ovechkin
+				</div>
+			</div>
+			<div class="row loading">
+				<div class="col-6">
+					<div class="wrapper">
+					  <div class="ball ball-1"></div>
+					  <div class="ball ball-2"></div>
+					  <div class="ball ball-3"></div>
+					</div>
+				</div>
+			</div>
 			<div class='player-info'>
-				<div class="row image" >
+				<div class="row images" >
 					<div class="col-1"></div>
 					<div class="col-1">
 						<div class="playername" ng-show="slide.whatslide('ovechkin')">
