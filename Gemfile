@@ -11,6 +11,8 @@ gem 'rack-cors'
 gem 'rest-client', '~> 1.8'
 gem 'json'
 
+gem 'rails_12factor', group: :production
+
 group :development, :test do
   gem 'byebug'
 end
