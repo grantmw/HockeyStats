@@ -3,6 +3,7 @@
 	<head>
 		<meta charset="UTF-8">
 		<link rel="stylesheet" type="text/css" href="/css/player-main.css">
+		<link rel="stylesheet" type="text/css" href="/css/animations.css">
 		<link rel="stylesheet" type="text/css" href="/css/custom-grid.css">
 		<link rel="stylesheet" src="//normalize-css.googlecode.com/svn/trunk/normalize.css" />
 		<link href='https://fonts.googleapis.com/css?family=Roboto:500' rel='stylesheet' type='text/css'>
@@ -13,33 +14,38 @@
 	</head>
 	<body ng-controller="MainController as main">
 		<div ng-controller="SlideController as slide">
+			<div class="row loading">
+				<div class='col-6 intro'>
+					Track the stats of: <br><br> 
+					Nicklas Backstrom &<br>
+					Alexander Ovechkin
+				</div>
+			</div>
+			<div class="row loading">
+				<div class="col-6">
+					<div class="wrapper">
+					  <div class="ball ball-1"></div>
+					  <div class="ball ball-2"></div>
+					  <div class="ball ball-3"></div>
+					</div>
+				</div>
+			</div>
 			<div class='player-info'>
-				<div class="row image" >
-					<div class="col-1"></div>
-					<div class="col-1">
-						<div class="playername" ng-show="slide.whatslide('ovechkin')">
-							{{ovechkin.name}}
-			        	</div>
-					</div>
-					<div class='col-1'>
-						<div id='ovechkinimage'>
+				<div class="row images" >
+					<div class="col-6">
+						<div class='playerimage'>
 							<img style='width:80%' ng-class="{chosenone: slide.whatslide('ovechkin')}" ng-click=" slide.chooseslide('ovechkin')" ng-src="{{ovechkin.image_url}}"/>
-						</div>
-					</div>
-					<div class="col-1">
-						<div id="backstromimage">
 							<img style='width:80%' ng-class="{chosenone: slide.whatslide('backstrom')}" ng-click=" slide.chooseslide('backstrom')" ng-src="{{backstrom.image_url}}"/>
 						</div>
 					</div>
-					<div class="col-1"></div>
-						<div class="playername" ng-show="slide.whatslide('backstrom')">{{backstrom.name}}
-			        	</div>
-					<div class="col-1"></div>
-				</div>
 				<div class="row">
-			        <div class="col-2"></div> 
-			        <div class="col-2">
-	<!--show slide if whatslide returns true -->		      
+					<div class='col-6'>
+						<div class="playername" ng-show="slide.whatslide('ovechkin')">
+							{{ovechkin.name}}
+			        	</div>
+						<div class="playername" ng-show="slide.whatslide('backstrom')">
+							{{backstrom.name}}
+			        	</div>
 						<div class="slide" ng-show="slide.whatslide('ovechkin')">
 							<ul> 2015-'16 NHL Season Stats:
 							<hr width ="90%">
@@ -56,9 +62,8 @@
 								Goals - {{backstrom.season_goals}}<br>
 							</ul>
 			        	</div>
-			        </div> 
-			        <div class="col-2"></div> 
-	    		</div> 
+					</div>
+				</div>
 	    	</div>	
 		</div>
 

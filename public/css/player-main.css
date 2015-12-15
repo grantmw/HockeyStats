@@ -4,26 +4,32 @@ body, html {
     padding: 0;
 }
 
-#ovechkinimage img {
+.images {
+	text-align: center;
+}
+
+.playerimage {
+	text-align: center;
+}
+
+.playerimage img {
 	border-radius: 0px 80px 0px;
 	border-color:#FFFFFF;
     border:8px solid #FFFFFF;
+    max-height: 20%;
+    max-width: 20%;
 }
 
-#ovechkinimage {
-	text-align: center;
 
+.intro {
+	text-align: center;
+	font-size: 50px;
 }
 
 .player-info{
 	display: none;
 }
 
-#backstromimage img {
-	border-radius: 0px 80px 0px;
-	border-color:#FFFFFF;
-    border:8px solid #FFFFFF;
-}
 
 .chosenone {
 	box-shadow: 10px 5px 0px black;
@@ -44,5 +50,6 @@ div ul {
 }
 
 .playername {
-	font-size: 43px
+	font-size: 43px;
+	text-align: center;
 }
