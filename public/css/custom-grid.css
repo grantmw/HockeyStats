@@ -3,11 +3,10 @@
     max-width: 1200px;      
 }
 
-/*-- our cleafix hack -- */ 
 .row:before, 
 .row:after {
     content:"";
-      display: table ;
+    display: table ;
     clear:both;
 }
 
@@ -15,7 +14,7 @@
     float: left; 
     min-height: 1px; 
     width: 16.66%; 
-    /*-- our gutter -- */
+    /*-- gutter -- */
     padding: 12px; 
     background-color: #ff3b4e;
 }
@@ -34,16 +33,20 @@
 [class*='col-'] > p {
  background-color: #FFC2C2; 
  padding: 0;
- margin: 0;
+ margin: auto;
  text-align: center; 
  color: white; 
 }
 
 @media all and (max-width:650px){
-    .col-1{ width: 50%;        }
-    .col-2{ width: 100%;    }
+    .col-1{ width: 50%;     }
+    .col-2{ width: 50%;     }
     .col-3{ width: 100%;    }
     .col-4{ width: 100%;    }
     .col-5{ width: 100%;    }
-    .col-6{ width: 100%;      }
+    .col-6{ width: 100%;    }
+    .playerimage img {
+        max-height: 60%;
+        max-width: 60%;
+    }
 }
