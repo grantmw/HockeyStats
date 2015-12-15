@@ -3,4 +3,4 @@
 
 With a misleading title, HockeyStats is an application that tracks the stats of just two players: Alexander Ovechkin and Nicklas Backstrom. For those who want easy access to this particular set of information displayed in a simple and minimalist way, this application is just for you.
 
-Stay tuned for deployment.
+Deployed using Heroku: https://capsstats.herokuapp.com/
